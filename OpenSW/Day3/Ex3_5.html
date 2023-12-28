@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <h3>&lt;label&gt; 태그로 로그인 폼 만들기</h3>
+    <hr>
+    <form name="fo" method="get">
+        <label>사용자 ID : <input type="text" size="15" value=""></label>
+        <br>
+        <label for="pass">비밀번호 : </label>
+        <input id="pass" type="password" size="15" value="">
+        <input type="submit" value="완료">
+        <br>
+        자소서 : <textarea cols="20" rows="5"> 이곳에 자기소개서 작성</textarea>
+    </form>
+    <hr><br>
+
+    <h4>가보고 싶은 나라</h4>
+    <form>
+        외국 : <input type="text" list="countries"><br>
+                <datalist id="countries">
+                    <option value="체코"></option>
+                    <option value="그리스"></option>
+                    <option value="미국"></option>
+                </datalist>
+        국내 : <input type="text" list="korea"><br>
+                <datalist id="korea">
+                    <option value="속초"></option>
+                    <option value="부산"></option>
+                    <option value="강릉"></option>
+                </datalist>
+    </form>
+    <hr><br>
+
+    <h4>먹고 싶은 중식에 체크하기</h4>
+    <form>
+        짜장면 <input type="checkbox" value="1">
+        짬뽕 <input type="checkbox" value="2">
+        탕수육 <input type="checkbox" value="3">
+    </form>
+    <hr><br>
+    <h4>컬러 다이얼로그로 색 입력</h4>
+    <hr>
+    <form>
+        색 선택 <input type="color" value="00BFFF" onchange="document.body.style.color=this.value">
+    </form>
+</body>
+</html>
