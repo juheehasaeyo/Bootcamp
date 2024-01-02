@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+    <script>
+        function over(obj) {
+            obj.src="amazon.png";
+        }
+        function out(obj) {
+            obj.src="naver.png";
+        }    
+    </script>
+</head>
+<body>
+    <h3>마우스를 올려보세요</h3>
+    <hr>
+    <img src="naver.png" alt="이미지"
+        onmouseover="over(this)"
+        onmouseover="out(this)">
+</body>
+</html>

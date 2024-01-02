@@ -15,7 +15,7 @@ public class Rectangle {
         System.out.println("("+x+", "+y+")에서 크기가 "+width+"x"+height+"인 사각형");
     }
     Boolean contains(Rectangle r) {
-        return true;
+        return (r.x >= this.x && r.y >= this.y && r.x + r.width <= this.x + this.width && r.y + r.height <= this.y + this.height);
     }
     public static void main(String[] args) {
         Rectangle r = new Rectangle(2, 2, 8, 7);

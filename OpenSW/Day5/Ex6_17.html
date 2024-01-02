@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제 6-17_응용</title>
+</head>
+<body>
+    <h3>for문으로 색깔 다르게 출력</h3>
+    <hr>
+    <script>
+        color_arr = ["red", "yello", "brown", "black", "blue"];
+        for(let i=0; i<5; i++) {
+            document.write("<span style=color:");
+            document.write(color_arr[i] + ">");
+            document.write("javascript");
+            document.write("</span><br>");
+        }
+    </script>
+    <!--<span style=color:red>bla bla</span>-->
+</body>
+</html>

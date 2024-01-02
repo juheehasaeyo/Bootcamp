@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-2</title>
+</head>
+<body>
+    <h3>document.write()로 표 만들기</h3>
+    <hr>
+    <script>
+        document.write("<table border=\"1\"><tbody><tr><td><strong>n</strong></td>");
+        for(let i=0; i<10; i++){
+            document.write("<td>"+i+"</td>");
+        }
+        document.write("</tr><tr><td><strong>n<sup>2</sup><strong></td>");
+        for(let i=0; i<10; i++){
+            document.write("<td>"+i*i+"</td>");
+        }
+        document.write("</tr></tbody></table>");
+        
+    </script>
+</body>
+</html>
