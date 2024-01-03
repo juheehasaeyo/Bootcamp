@@ -5,28 +5,50 @@
     <title>8</title>
     <style>
         div {
-        display : inline-block;
-        width : 150px;
-        padding : 10px;
+            display : inline-block;
+            width : 150px;
+            padding : 10px;
         }
     </style>        
 </head>
 <body>
+    <!-- <h3>16개의 랜덤한 색 만들기</h3>
+    <hr>
+    <script>
+        let colorNames = new Array(16);
+        for(let i=0; i<colorNames.length; i++) {
+            colorNames[i] = new Array(3);
+            colorNames[i][0] = Math.floor(Math.random()*255);
+            colorNames[i][1] = Math.floor(Math.random()*255);
+            colorNames[i][2] = Math.floor(Math.random()*255);
+        }
+
+        for(let i=0; i<colorNames.length; i++) {
+            let str = "<div style='background-color: rgb(" + colorNames[i][0] + ',' + 
+                                    colorNames[i][1] + ',' + colorNames[i][2] + ")'>";
+            str += colorNames[i];
+            str += "</div>";
+            document.write(str);
+        }
+    </script> -->
     <h3>16개의 랜덤한 색 만들기</h3>
     <hr>
     <script>
         let colorNames = new Array(16);
         for(let i=0; i<colorNames.length; i++) {
-            colorNames[i] = Math.floor(Math.random()*100);
-            document.write(colorNames[i] + " ");
-        }
-
-        for(let i=0; i<colorNames.length; i++) {
-            let str = "<div style='background-color:";
-            str += colorNames[i];
-            str += "'>" + colorNames[i] + "</div>";
+            let r = Math.floor(Math.random()*255);
+            let g  = Math.floor(Math.random()*255);
+            let b  = Math.floor(Math.random()*255);
+            let rgb = `${r}, ${g}, ${b}`;
+            let rgbText = `rgb(${rgb})`;
+            let str = "<div style='background-color:" + rgbText + "'>";
+            // let str = "<div style='background-color: rgb(" + r + ',' + g + ',' + b + ")'>";
+            // str += r + ","+ g + ","+ b;
+            str += rgbText;
+            str += "</div>";
             document.write(str);
         }
+        
     </script>
 </body>
 </html>
