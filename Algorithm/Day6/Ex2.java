@@ -15,15 +15,42 @@ abstract class Converter {
         sc.close();
     }
 }
-class Won2Dollar {
+class Won2Dollar extends Converter {
+    public Won2Dollar(double ratio) {
+        this.ratio = ratio;
+    }
+    protected double convert(double src) {
+        return src / ratio;
+    }
+    protected String getSrcString() {
+        return "원";
+    }
+    protected String getDestString() {
+        return "달러";
+    }
+}
+class Km2Mile extends Converter {
+    public Km2Mile(double ratio) {
+        this.ratio = ratio;
+    }
+    protected double convert(double src) {
+        return src / ratio;
+    }
+    protected String getSrcString() {
+        return "Km";
+    }
+    protected String getDestString() {
+        return "mile";
+    }
+}
+class Ex2 {
 
     public static void main(String args[]) {
-        /*Won2Dollar toDollar = new Won2Dollar(1200);
+        Won2Dollar toDollar = new Won2Dollar(1200);
         // 1달러는 1200원
         toDollar.run();
-        Km2Mile toMile = new Km2Mile(1.6);
+        /*Km2Mile toMile = new Km2Mile(1.6);
         // 1마일은 1.6km
         toMile.run();*/
-
     }
 }
