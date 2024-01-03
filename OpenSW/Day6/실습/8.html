@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <style>
+        div {
+        display : inline-block;
+        width : 150px;
+        padding : 10px;
+        }
+    </style>        
+</head>
+<body>
+    <h3>16개의 랜덤한 색 만들기</h3>
+    <hr>
+    <script>
+        let colorNames = new Array(16);
+        for(let i=0; i<colorNames.length; i++) {
+            colorNames[i] = Math.floor(Math.random()*100);
+            document.write(colorNames[i] + " ");
+        }
+
+        for(let i=0; i<colorNames.length; i++) {
+            let str = "<div style='background-color:";
+            str += colorNames[i];
+            str += "'>" + colorNames[i] + "</div>";
+            document.write(str);
+        }
+    </script>
+</body>
+</html>

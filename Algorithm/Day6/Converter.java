@@ -1,4 +1,4 @@
-package Day5;
+package Day6;
 import java.util.Scanner;
 abstract class Converter {
     abstract protected double convert(double src);

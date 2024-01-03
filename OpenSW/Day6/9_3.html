@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9-3</title>
+</head>
+<body>
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <script>
+        // Book 프로토타입 만들기
+        function Book() {
+            this.title = "HTML5";
+            this.author = "홍길동";
+            this.price = 20000;
+        }
+        let book = new Book();
+
+        document.write("book : ");
+        document.write(book.title + ", ");
+        document.write(book.author + ", ");
+        document.write(book.price);
+    </script>
+</body>
+</html>
