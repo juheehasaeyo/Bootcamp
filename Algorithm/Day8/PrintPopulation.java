@@ -11,7 +11,7 @@ class Search {
         this.num = num;
     }
 }
-public class Example2 {
+public class PrintPopulation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         HashMap<String, Search> map = new HashMap<>();
